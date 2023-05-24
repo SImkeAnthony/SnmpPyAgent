@@ -1,16 +1,17 @@
-# This is a sample Python script.
+#Coding with UTF8
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+"""
+Author : Simke Anthony
+Company : Haute ecole de la province du Hainaut
+Departement : Departement des sciences et technologies
+Etudes : bachiler en informatique est systèmes, réseaux et télécommunication
+Orientation : développement
+Context : Snmp agent prototypage
+"""
+
+from agent.SnmpAgent import SnmpAgent
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    agent = SnmpAgent("127.0.0.1", 162)
+    agent.run(1)
